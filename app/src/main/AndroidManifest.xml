@@ -13,7 +13,6 @@
         <activity android:name=".Ver_Usuario" />
         <activity android:name=".Ver_citas" />
         <activity android:name=".Ver_estadisticas" />
-        <activity android:name=".Ver_Tratamiento" />
         <activity android:name=".Ver_pacientes" />
         <activity android:name=".Registro" />
         <activity android:name=".Funciones" />
