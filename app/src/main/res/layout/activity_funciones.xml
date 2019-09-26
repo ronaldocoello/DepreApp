@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/tratamiento"
         android:layout_width="165dp"
         android:layout_height="82dp"
         android:layout_marginTop="108dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/pacientes"
         android:layout_width="153dp"
         android:layout_height="82dp"
         android:layout_marginStart="16dp"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/estadisticas"
         android:layout_width="153dp"
         android:layout_height="92dp"
         android:layout_marginStart="16dp"
@@ -62,10 +62,10 @@
         android:textColorLink="#bf360c"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/pacientes" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/test"
         android:layout_width="276dp"
         android:layout_height="92dp"
         android:layout_marginStart="8dp"
@@ -78,10 +78,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
+        app:layout_constraintTop_toBottomOf="@+id/usuario" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/usuario"
         android:layout_width="276dp"
         android:layout_height="92dp"
         android:layout_marginStart="8dp"
@@ -97,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/citas"
         android:layout_width="164dp"
         android:layout_height="92dp"
         android:layout_marginTop="16dp"
@@ -108,5 +108,5 @@
         android:textColorLink="#bf360c"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/tratamiento" />
 </android.support.constraint.ConstraintLayout>
