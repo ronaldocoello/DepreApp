@@ -6,11 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.nio.channels.InterruptedByTimeoutException;
 
 public class Funciones extends AppCompatActivity {
 
-    Button  pacientes, tratamiento, estadisticas;
+    Button  pacientes, tratamiento, estadisticas,citas,usuario,test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +17,12 @@ public class Funciones extends AppCompatActivity {
         setContentView(R.layout.activity_funciones);
 
         pacientes = (Button) findViewById(R.id.pacientes);
-        tratamiento = (Button) findViewById(R.id.tratamiento);
         estadisticas = (Button) findViewById(R.id.estadisticas);
+        citas = (Button) findViewById(R.id.citas);
+        usuario = (Button) findViewById(R.id.usuario);
+        test = (Button) findViewById(R.id.test);
+
+
 
         pacientes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,17 +32,30 @@ public class Funciones extends AppCompatActivity {
             }
         });
 
-        tratamiento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Tratamiento();
-            }
-        });
         estadisticas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Estadisiticas();
+            }
+        });
+        citas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Citas();
+            }
+        });
+        usuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Usuario();
+            }
+        });
+
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Test();
             }
         });
 
@@ -50,14 +66,26 @@ public class Funciones extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void Tratamiento()
-    {
-        Intent intent = new Intent(this, Ver_Tratamiento.class);
-        startActivity(intent);
-    }
+
     public void Estadisiticas()
     {
         Intent intent = new Intent(this, Ver_estadisticas.class);
+        startActivity(intent);
+    }
+    public void Citas()
+    {
+        Intent intent = new Intent(this,Ver_citas.class);
+        startActivity(intent);
+
+    }
+
+    public void Usuario() {
+        Intent intent = new Intent(this, Ver_Usuario.class);
+        startActivity(intent);
+    }
+    public void Test()
+    {
+        Intent intent = new Intent(this, Tests.class);
         startActivity(intent);
     }
 }

@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void funciones(String usuario, String contraseña)
     {
-        if((usuario.equals("ronaldo")) && (contraseña.equals("1234")))
+        if((usuario.equals("Ronaldo")) && (contraseña.equals("1234")))
         {
             Intent intent = new Intent(this, Funciones.class);
             startActivity(intent);
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
             builder.setIcon(R.mipmap.ic_launcher).
                     setTitle("ADVERTENCIA").
-                    setMessage("Debes escribir usuario y contraseña para poder ingresar.");
+                    setMessage("Ingresar Usuario y Contraseña");
 
             AlertDialog alertDialog = builder.create();
             alertDialog.show();
